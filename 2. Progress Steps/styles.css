@@ -41,11 +41,43 @@ body {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    width: 50%;
+    width: 0%;
     height: 4px;
     z-index: -1;
-    transition: 0.4s ease-in;
+    transition: 0.4s ease;
 }
 .button{
     background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 16px;
+}
+.button:active{
+    transform: scale(0.98);
+}
+.button:focus{
+    outline: none;
+}
+.button:disabled{
+    background: #e0e0e0;
+    cursor:not-allowed;
+}
+.circle{
+    background: #fff;
+    color: #999;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #e0e0e0;
+    transition: 0.4s ease;
+}
+.circle.active {
+    border-color: #3498db;
 }
