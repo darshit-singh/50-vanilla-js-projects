@@ -3,6 +3,7 @@
 }
 
 body {
+    background: #f6f7fb;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
@@ -11,4 +12,15 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+}
+.container{
+    text-align: center;
+}
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
 }
