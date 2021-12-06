@@ -34,7 +34,7 @@ const update = () => {
         if (id < currentActive) {
             circle.classList.add('active')
         } else {
-            circles.classList.remove('active')
+            circle.classList.remove('active')
         }
     })
 }
