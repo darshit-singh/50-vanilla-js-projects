@@ -22,6 +22,14 @@ prev.addEventListener('click', () => {
 })
 
 const update = () => {
+    if (currentActive === 1) {
+        prev.disabled = true
+    } else if (currentActive === circles.length) {
+        next.disabled = true
+    } else {
+        prev.disabled = false
+        next.disabled = false
+    }
     circles.forEach((circle, id) => {
         if (id < currentActive) {
             circle.classList.add('active')
